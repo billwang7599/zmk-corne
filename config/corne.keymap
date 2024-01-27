@@ -26,9 +26,9 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // | TAB  |  Q  |  W  |  E  |  R  |    T    |   |  Y  |  U   |  I  |  O  |  P  | ESC |
-            // | CTRL |  A  |  S  |  D  |  F  |    G    |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |    B    |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
+            // | ESC  |  Q  |  W  |  E  |  R  |    T      |   |  Y  |  U   |  I  |  O  |  P  | TAB |
+            // | CTRL |  A  |  S  |  D  |  F  |    G      |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |    B      |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
             //                    | GUI | LWR | HYPER/SPC |   | ALT/ENT | RSE  | BKSP |
 
             bindings = <
@@ -41,10 +41,10 @@
 
         layer_below {
             // -----------------------------------------------------------------------------------------
-            // |      |  !  |  @  |  #  |  $  |    %     |   |  ^  |  &  |  *  |  (  |  )  |   \   |
-            // |      |  1  |  2  |  3  |  4  |    5     |   |  -  |  =  |  `  |  [  |  ]  |  "|"  |
-            // | SHFT |  6  |  7  |  8  |  9  |    0     |   |  _  |  +  |  ~  |  {  |  }  | RSHFT |
-            //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
+            // | ESC  |  !  |  @  |  #  |  $  |    %      |   |  ^  |  &   |  *  |  (  |  )  |   \   |
+            // |      |  1  |  2  |  3  |  4  |    5      |   |  -  |  =   |  `  |  [  |  ]  |  "|"  |
+            // | SHFT |  6  |  7  |  8  |  9  |    0      |   |  _  |  +   |  ~  |  {  |  }  | RSHFT |
+            //                     | GUI |    |HYPER/SPACE|   | ALT/ENT | BKSP |     |
 
             bindings = <
 &kp ESCAPE  &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET                   &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
@@ -57,7 +57,7 @@
         layer_above {
             // -----------------------------------------------------------------------------------------
             // |       |  F1  |  F2  |  F3  |  F4  |  F5 |            |  F6  |  F7  |  F8  |  F9  |  F10  |   |
-            // |       | Prev | Next | Vol - | Vol + | Play/Pause |   |      | LFT | DWN |  UP | RGT |     |     |
+            // |  CAPS | Prev | Next | Vol - | Vol + | Play/Pause |   |      | LFT | DWN |  UP | RGT |     |     |
             // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |            |     |     |     |     |     |     |
             //                    |     |     |    |                  |     |     |     |
 
