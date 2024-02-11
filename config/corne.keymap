@@ -21,6 +21,26 @@
         };
     };
 
+    macros {
+        alt_f4: alt_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp F4>;
+
+            label = "ALT_F4";
+        };
+
+        ggez: ggez {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(ENTER) &kp G &kp G &kp E &kp Z &kp ENTER>;
+
+            label = "GGEZ";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -71,10 +91,10 @@
 
         league {
             bindings = <
-&tp TAB ESCAPE        &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &trans        &trans  &trans  &trans  &trans  &kp TAB
+&tp TAB ESCAPE        &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &ggez         &trans  &trans  &trans  &trans  &trans
 &tp LEFT_CONTROL TAB  &kp Q   &kp W   &kp E         &kp R   &kp T        &trans        &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT        &kp A   &kp B   &kp D         &kp F   &kp G        &trans        &trans  &trans  &trans  &trans  &trans
-                                      &kp LEFT_ALT  &kp P   &kp SPACE    &kp LEFT_WIN  &to 0   &trans
+&kp LEFT_SHIFT        &kp A   &kp B   &kp D         &kp F   &kp G        &alt_f4       &trans  &trans  &trans  &trans  &trans
+                                      &kp LEFT_ALT  &kp P   &kp SPACE    &kp LEFT_WIN  &mo 0   &to 0
             >;
         };
     };
