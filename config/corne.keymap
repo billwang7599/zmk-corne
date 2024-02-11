@@ -42,10 +42,10 @@
 
         league {
             bindings = <
-&tp TAB ESCAPE        &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &ggez      &trans  &trans  &trans  &trans  &trans
-&tp LEFT_CONTROL TAB  &kp Q   &kp W   &kp E         &kp R   &kp T        &trans     &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT        &kp A   &kp B   &kp D         &kp F   &kp G        &alt_f4    &trans  &trans  &trans  &trans  &kp LEFT_WIN
-                                      &kp LEFT_ALT  &kp P   &kp SPACE    &kp ENTER  &mo 1   &to 1
+&tp TAB ESCAPE        &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &ggez      &trans  &trans         &trans  &trans  &trans
+&tp LEFT_CONTROL TAB  &kp Q   &kp W   &kp E         &kp R   &kp T        &trans     &trans  &trans         &trans  &trans  &to 1
+&kp LEFT_SHIFT        &kp A   &kp B   &kp D         &kp F   &kp G        &alt_f4    &trans  &trans         &trans  &trans  &kp LEFT_WIN
+                                      &kp LEFT_ALT  &kp P   &kp SPACE    &kp ENTER  &mo 1   &kp BACKSPACE
             >;
         };
 
